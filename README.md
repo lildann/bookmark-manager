@@ -28,24 +28,33 @@ I want to be able to delete bookmarks from the list
 Instructions for Database Setup
 ----
 * Connect to psql
-* Create the database using the psql command CREATE DATABASE bookmark_manager;
-* Connect to the database using the pqsl command \c bookmark_manager;
-* Run the query we have saved in the file 01_create_bookmarks_table.sql
+* Create the database using the psql command: 
+```
+CREATE DATABASE bookmark_manager;
+```
+* Connect to the database using the pqsl command 
+```
+\c bookmark_manager;
+```
+* To setup the approriate tables, run the SQL script saved in the 'db/migrations' folder in the given order (file 01_create_bookmarks_table.sql)
+
 
 ### To run the Bookmark Manager app:
 
 ```
 rackup -p 3000
 ```
+
 
 Instructions for TEST Database Setup
 ----
 * Connect to psql
 * Create the database using the psql command CREATE DATABASE bookmark_manager_test;
 * Connect to the database using the pqsl command \c bookmark_manager_test;
-* Run the query we have saved in the file 01_create_bookmarks_table.sql
+* Run the saved in the file 01_create_bookmarks_table.sql
 
 ### To run the Bookmark Manager app:
 
 ```
 rackup -p 3000
+```
